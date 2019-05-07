@@ -21,6 +21,7 @@ urlpatterns = [
     url(r'^accounts/', include('allauth.urls')),
     url(r'^api/v1/', include('home.api.v1.urls')),
     url(r'^admin/', admin.site.urls),
+    url(r'^photos/', include('photologue.urls', namespace='photologue')),
 ]
 
 admin.site.site_header = 'Whereisit?'
